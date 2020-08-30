@@ -16,27 +16,56 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <style>
+            body {
+                background-color: black;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .ketik
+            {
+                font-size: 22px;
+                width: 100%;
+                margin-left: 15%;
+                color: green;
+                white-space:nowrap;
+                overflow:hidden;
+                -webkit-animation: ketik 5s steps(80, end);
+                animation: ketik 5s steps(70, end);
+            }
+            @keyframes ketik{
+                    from { width: 0; }
+            }
+
+            @-webkit-keyframes ketik{
+                    from { width: 0; }
+            }
+            @media (max-width: 750px) {
+                .ketik{              
+                  margin-left: 0;
+                }
+            }
+        </style>
     </head>
     <body>
         <!-- Page Content-->
         <div class="container-fluid p-0">
-            <div style="text-align: center;">
-                    <h1 class="mb-0">
+                    <h1 class="text-light" style="text-align: center;">
                             Bagus 
-                            <span class="text-primary">Arya</span>
+                            <span class="text-light" style="text-align: center;">Arya</span>
                         </h1>
-                        <div class="subheading mb-5">
+                        <div class="subheading mb-5 text-light" style="text-align: center;">
                             Cargo Sari Street, Denpasar Bali
                             <a href="mailto:bagusarya850@email.com">bagusarya850@gmail.com</a>
                         </div>
-                        <p class="lead mb-5">I am experience in web design</p>
-                        <div class="social-icons">
+                        <p class="ketik lead mb-5">Hello my name is Bagus Arya</p>
+                        <div class="social-icons" style="text-align: center;">
                             <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
                             <a class="social-icon" href="#"><i class="fab fa-github"></i></a>
-                            <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-icon" href="#"><i class="fab fa-slack"></i></a>
                         </div>
-            </div>
         </div>
     </body>
 </html>
