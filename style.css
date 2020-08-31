@@ -56,7 +56,6 @@ animation:move-mists-back 200s linear infinite;
 	-webkit-animation: animate-roket linear 5s infinite; */
 	/* -ms-transform: rotate(90deg);
 	-webkit-transform: rotate(90deg); */
-	transform: rotate(90deg);
 	}
 /* .mixBlnd
 {
@@ -98,7 +97,7 @@ to {background-position:-10000px 1000px;}
 /* roket */
 @keyframes animate-roket {
 	from { background-position: 120% 70px; transform: rotate(0deg);} 
-	to { background-position: -120% 70px, 10px 0px, 20% 0px;;transform: rotate(45deg);}
+	to { background-position: -120% 70px, 10px 0px, 20% 0px;transform: rotate(45deg);}
 	/* dari kanan tengah ke pojok kiri atas*/
 	/* from { background-position: 120% 70px ke kiri, 10px 0px, 0px 0px; transform: rotate(0deg);} 
 	to { background-position: -120% 70px, 10px 0px, -500px 0px;;transform: rotate(45deg);} */
@@ -107,4 +106,3 @@ to {background-position:-10000px 1000px;}
 	 .gambar {           
 		border-radius: 50%; width: 150px;
 	}
-}
